@@ -131,6 +131,11 @@ Config::define('SMTP_PASSWORD', env('SMTP_PASSWORD'));
 Config::define('GOOGLE_MAPS_API_KEY', env('GOOGLE_MAPS_API_KEY'));
 
 /**
+ * Collaborative Travel Journal
+ */
+Config::define('CTJ_APP_PATH', env('CTJ_APP_PATH'));
+
+/**
  * Custom Settings
  */
 Config::define('AUTOMATIC_UPDATER_DISABLED', true);
