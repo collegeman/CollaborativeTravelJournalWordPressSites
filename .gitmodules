@@ -1,0 +1,3 @@
+[submodule "web/app/plugins/collaborative-travel-journal"]
+	path = web/app/plugins/collaborative-travel-journal
+	url = https://github.com/collegeman/CollaborativeTravelJournalWPPlugin
