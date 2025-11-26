@@ -124,6 +124,7 @@ Config::define('SMTP_AUTH', env('SMTP_AUTH') ?? true);
 Config::define('SMTP_PORT', env('SMTP_PORT') ?? 587);
 Config::define('SMTP_USERNAME', env('SMTP_USERNAME') ?? 'api');
 Config::define('SMTP_PASSWORD', env('SMTP_PASSWORD'));
+Config::define('MAIL_FROM', env('MAIL_FROM') ?? 'no-reply@journwithme.com');
 
 /**
  * Google Maps API
@@ -156,11 +157,11 @@ Config::define('CONCATENATE_SCRIPTS', false);
 /**
  * Debugging Settings
  */
-Config::define('WP_DEBUG', env('WP_DEBUG', false));
-Config::define('WP_DEBUG_DISPLAY', env('WP_DEBUG_DISPLAY', false));
-Config::define('WP_DEBUG_LOG', env('WP_DEBUG_LOG', false));
-Config::define('SCRIPT_DEBUG', env('SCRIPT_DEBUG', false));
-ini_set('display_errors', env('DISPLAY_ERRORS', '0'));
+Config::define('WP_DEBUG', env('WP_DEBUG') ?? false);
+Config::define('WP_DEBUG_DISPLAY', env('WP_DEBUG_DISPLAY') ?? false);
+Config::define('WP_DEBUG_LOG', env('WP_DEBUG_LOG') ?? false);
+Config::define('SCRIPT_DEBUG', env('SCRIPT_DEBUG') ?? false);
+ini_set('display_errors', env('DISPLAY_ERRORS') ?? '0');
 
 /**
  * Allow WordPress to detect HTTPS when used behind a reverse proxy or a load balancer

@@ -8,3 +8,5 @@ add_action('phpmailer_init', function ($phpmailer) {
     $phpmailer->Username = constant('SMTP_USERNAME');
     $phpmailer->Password = constant('SMTP_PASSWORD');
 });
+
+ add_filter('wp_mail_from', fn() => constant('MAIL_FROM'));
