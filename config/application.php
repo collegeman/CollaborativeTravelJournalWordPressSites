@@ -137,6 +137,11 @@ Config::define('GOOGLE_MAPS_API_KEY', env('GOOGLE_MAPS_API_KEY'));
 Config::define('CTJ_APP_PATH', env('CTJ_APP_PATH'));
 
 /**
+ * Allow Media Trashing
+ */
+Config::define('MEDIA_TRASH', env('MEDIA_TRASH') ?? true);
+
+/**
  * Custom Settings
  */
 Config::define('AUTOMATIC_UPDATER_DISABLED', true);
