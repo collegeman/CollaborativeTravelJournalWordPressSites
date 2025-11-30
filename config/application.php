@@ -135,6 +135,7 @@ Config::define('GOOGLE_MAPS_API_KEY', env('GOOGLE_MAPS_API_KEY'));
  * Collaborative Travel Journal
  */
 Config::define('CTJ_APP_PATH', env('CTJ_APP_PATH'));
+Config::define('CTJ_BRAND', env('CTJ_BRAND') ?? false);
 
 /**
  * Allow Media Trashing
